@@ -17,6 +17,6 @@ export default function CountryLookup() {
     };
     getContry();
   }, []);
-  console.log(country);
+
   return <div>{country}</div>;
 }
