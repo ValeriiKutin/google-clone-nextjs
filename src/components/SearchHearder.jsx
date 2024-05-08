@@ -3,6 +3,7 @@ import Link from "next/link";
 import SearchBox from "./SearchBox";
 import { RiSettings3Line } from "react-icons/ri";
 import { TbGridDots } from "react-icons/tb";
+import SearchHeaderOption from "./SearchHeaderOption";
 
 export default function SearchHearder() {
   return (
@@ -15,7 +16,7 @@ export default function SearchHearder() {
             width={120}
             height={40}
             priority
-            style={{ width: "auto" }}
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
         <div className="flex-1">
@@ -29,6 +30,7 @@ export default function SearchHearder() {
           Sign In
         </button>
       </div>
+      <SearchHeaderOption />
     </header>
   );
 }
